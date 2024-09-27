@@ -49,6 +49,18 @@ nav {
   background-color: var(--primary-color);
 }
 
+.nav__header .btn {
+  padding: 0.75rem 1.5rem; 
+  outline: none;
+  border: none;
+  font-size: 1rem;        
+  color: var(--white);      
+  background-color: var(--primary-color); 
+  border-radius: 5rem;      
+  transition: 0.3s;        
+  cursor: pointer;         
+}
+
 .nav__logo a {
   display: flex;
   align-items: center;
