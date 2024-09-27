@@ -103,6 +103,37 @@ nav {
   color: var(--secondary-color);
 }
 
+/* Button styling */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+/* Specific styles for the button in the navigation bar */
+.nav__links .btn {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/* Make the button full width on smaller screens */
+@media (max-width: 768px) {
+  .nav__links .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .header__container {
   max-width: var(--max-width);
   margin-inline: auto;
@@ -167,23 +198,6 @@ nav {
 .header__content p {
   margin-bottom: 2rem;
   color: var(--text-light);
-}
-
-.header__content .btn {
-  padding: 0.75rem 1.5rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  color: var(--white);
-  background-color: var(--primary-color);
-  border-radius: 5rem;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.header__content .btn:hover {
-  color: var(--primary-color);
-  background-color: var(--white);
 }
 
 .socials {
