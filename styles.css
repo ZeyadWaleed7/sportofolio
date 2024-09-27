@@ -61,6 +61,11 @@ nav {
   cursor: pointer;         
 }
 
+.nav__header .btn:hover {
+  color: var(--primary-color);   
+  background-color: var(--white); 
+}
+
 .nav__logo a {
   display: flex;
   align-items: center;
