@@ -219,10 +219,14 @@ nav {
 .socials a:hover {
   color: var(--primary-color);
 }
-
 .header__bar {
   font-size: 0.9rem;
-  color: var(--text-light);
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  left: 40%;
+  transform: translateX(-50%);
 }
 
 @media (width > 768px) {
