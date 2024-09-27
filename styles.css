@@ -49,19 +49,19 @@ nav {
   background-color: var(--primary-color);
 }
 
-.nav__header .btn {
+.log {
   padding: 0.75rem 1.5rem; 
   outline: none;
   border: none;
   font-size: 1rem;        
-  color: var(--white);      
+  color: #ffffff;      
   background-color: var(--primary-color); 
-  border-radius: 5rem;      
+  border-radius: 0.5rem;      
   transition: 0.3s;        
   cursor: pointer;         
 }
 
-.nav__header .btn:hover {
+.log:hover {
   color: var(--primary-color);   
   background-color: var(--white); 
 }
