@@ -25,10 +25,7 @@ ul {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("bg.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: black;
 }
 
 nav {
