@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins',sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login{
+    background: #F5F5F5;
+    border: none;
+    color:black;
+    font-weight:550;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 10px; 
+}
+
+.login:hover{
+    background-color: rgba(212, 211, 211, 0.816);
+}
+
+.SignUp{
+    background-color: #2EB62B;
+    border: 2px solid #2EB62B;
+    color: white;
+    font-weight:550;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 10px;  
+}
+
+.SignUp:hover{
+    background-color: #186f17;
+    border-color: #186f17;
+    color: rgba(212, 211, 211, 0.816);
+}
+
+.header {
+    display: flex;
+    padding-top: 24px;
+    color: white;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(40px);
+    padding: 20px 20px;
+}
+
+.navigation{
+    display: flex;
+    gap: 12px;
+    padding-right: 24px;
+    padding-top: 5px;
+}
+
+.links {
+    gap: 32px;
+    display:flex;
+    margin-right: 32px;
+}
+
+.links a{
+    color: white;
+    font-weight:500;
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+.links a.features{
+    color: #2EB62B;
+    font-weight: bold;
+}
+
+.links a:hover{
+    color:#2EB62B;
+}
+
+
+.logo {
+    padding-left: 24px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+body{
+ 
+    background-color: black;
+    background-attachment:scroll; 
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    justify-content: space-between;
+    display: flex;
+}
+
+.textcontainer{
+    padding-top: 200px;
+    padding-left:120px;
+}
+
+.textcontainer h1{
+    color: white;
+    font-size: 65px;
+}
+.textcontainer p {
+    color: white;
+    font-size: 30px;
+}
+
+.download {
+    padding-top:20px;
+    max-width:300px;
+    height: auto;
+}
+
+.download img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.about{
+    padding-left: 140px;
+    margin-top: 400px;
+}
+
+.abouttext{
+    color: white;
+    font-size: 24px;
+}
+
+.bgimage img {
+    width: 500px;
+    height: auto;
+    padding-top: 40px;
+}
+
+footer{
+    color: white;
+    margin-top: auto;
+    text-align: center;
+    padding-bottom: 24px;
+    font-size: 12px;
+}
+
+.features {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
