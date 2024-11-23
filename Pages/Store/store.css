@@ -169,3 +169,102 @@ footer{
     text-underline-offset: 10px;
     text-decoration-thickness: 3px;
 }
+
+
+
+
+
+
+
+
+
+
+  .product-card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .product-image {
+    position: relative;
+    height: 180px;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-image img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+  .favorite-btn span {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  .product-details {
+    padding: 16px;
+  }
+  
+  .brand-name {
+    font-size: 12px;
+    color: #555;
+    margin: 0 0 4px;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    margin: 0 0 8px;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin: 0 0 8px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin: 0 0 8px;
+  }
+  
+  .stars {
+    color: #f4b400;
+    font-size: 14px;
+    margin-right: 8px;
+  }
+  
+  .review-count {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .arrival-info {
+    font-size: 12px;
+    color: #888;
+  }
