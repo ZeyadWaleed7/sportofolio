@@ -148,7 +148,7 @@ footer{
 
 .team-member {
     width: 24%;
-    background-color: black ;
+    background-color: #2c2c2c;
     border-radius: 12px;
     text-align: center;
     padding: 20px;
@@ -157,7 +157,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: auto;
+    height: auto; 
     overflow: hidden;
 }
 
@@ -203,7 +203,7 @@ footer{
 }
 
 .team-link:hover {
-    color: #1a8b22;
+    color: #1a8b22; 
 }
 
 /* Responsive Design */
@@ -230,3 +230,4 @@ footer{
         height: 200px;
     }
 }
+
