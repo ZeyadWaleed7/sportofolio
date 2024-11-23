@@ -163,3 +163,9 @@ footer{
     padding-bottom: 24px;
     font-size: 12px;
 }
+
+.home {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
