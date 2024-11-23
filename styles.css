@@ -127,14 +127,13 @@ body{
 
 .download {
     padding-top:20px;
-    max-width:400px;
+    max-width:300px;
+    height: auto;
 }
 
 .download img {
-    display: block;
     width: 100%;
     height: auto;
-    transform: scale(0.8);
 }
 
 .about{
@@ -152,9 +151,9 @@ body{
 }
 
 .bgimage img {
-    width: 100%;
+    width: 500px;
     height: auto;
-    object-fit: cover; 
+    object-fit: contain; 
 }
 
 footer{
