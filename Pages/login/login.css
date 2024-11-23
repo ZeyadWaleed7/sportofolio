@@ -50,5 +50,8 @@ body{
      .right-box{
         padding: 20px;
      }
+     .ronaldo{
+        display: none;
+     }
 
 }
