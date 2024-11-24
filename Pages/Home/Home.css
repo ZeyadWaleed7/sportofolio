@@ -135,16 +135,6 @@ body{
     
 }
 
-.about{
-    padding-left: 140px;
-    margin-top: 400px;
-}
-
-.abouttext{
-    color: white;
-    font-size: 24px;
-}
-
 .bgimage img {
     max-width: 500px;
     min-width: 200px;
@@ -178,12 +168,13 @@ footer{
     margin: 3px 0;
 }
 
+.partner{
+    background-color: #191919;
+}
+
 @media (max-width: 768px) {
     .navigation{
         display: none;
-    }
-    .burger-menu {
-        display: flex;
     }
     .container {
         flex-direction: column;
