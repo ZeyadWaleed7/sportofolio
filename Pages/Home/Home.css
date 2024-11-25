@@ -172,7 +172,18 @@ footer{
     background-color: #191919;
 }
 .partnerstext{
-    color:#191919;
+    color:#4f4f4f;
+    padding-top: 200px;
+    margin-bottom: 20px;
+}
+
+.maincard{
+    background-color:#4f4f4f;
+    height:500px;
+    margin-left: 38px;
+    margin-right: 38px;
+    width: 1440px;
+    margin-top: 24px;
 }
 
 @media (max-width: 768px) {
