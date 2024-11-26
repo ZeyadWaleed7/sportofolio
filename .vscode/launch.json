@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "D:/Work/Learning/coourses/Y3 S1/ui/UI Project/sportofolio/Pages/Blog/blog.html",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}" 
         }
     ]
 }
