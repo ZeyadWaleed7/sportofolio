@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Styling (same as About page) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(40px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  gap: 12px;
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+  margin-right: 32px;
+}
+
+.links a {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.links a:hover {
+  color: #2EB62B;
+}
+
+.login,
+.SignUp {
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.login {
+  background: #f5f5f5;
+  color: black;
+}
+
+.login:hover {
+  background-color: rgba(212, 211, 211, 0.816);
+}
+
+.SignUp {
+  background-color: #2EB62B;
+  color: white;
+  border: 2px solid #2EB62B;
+}
+
+.SignUp:hover {
+  background-color: #186f17;
+  border-color: #186f17;
+}
+
+/* Main Profile Section */
+.profile-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2EB62B;
+}
+
+.profile-location {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #aaa;
+}
+
+.follow-button {
+  background-color: #2EB62B;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.follow-button:hover {
+  background-color: #186f17;
+}
+
+.profile-stats {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.profile-bio {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Profile Details Section */
+.profile-details {
+  background-color: #191919;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.details-title {
+  font-size: 24px;
+  color: #2EB62B;
+  margin-bottom: 20px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.detail-item {
+  background-color: #252525;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.detail-item h3 {
+  color: #2EB62B;
+  margin-bottom: 10px;
+}
+
+.detail-item p {
+  color: #d0d0d0;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  padding: 24px;
+  font-size: 12px;
+}
