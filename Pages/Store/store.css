@@ -214,18 +214,14 @@ footer{
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    transition: transform 0.3s ease;
   }
   
   .favorite-btn span {
-    font-size: 18px;
-    color: #ccc; /* Empty heart color */
-    transition: color 0.3s ease, transform 0.3s ease; /* Color change and scaling animation */
+    color: #ccc; 
   }
   
   .favorite-btn.active span {
-    color: red; /* Red heart when active */
-    transform: scale(1.2); /* Slight zoom effect */
+    color: #2EB62B; 
   }
   
   

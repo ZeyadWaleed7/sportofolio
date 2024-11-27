@@ -104,14 +104,14 @@ body{
     min-height: 100vh;
 }
 
-.container {
-    justify-content: space-between;
-    display: flex;
+.main{
+    width: 100%;
 }
 
 .textcontainer{
     padding-top: 200px;
-    padding-left:120px;
+    padding-left:36px;
+
 }
 
 .textcontainer h1{
@@ -136,10 +136,10 @@ body{
 }
 
 .bgimage img {
-    max-width: 500px;
-    min-width: 200px;
+    width: 500px;
     height: auto;
     padding-top: 40px;
+    padding-right: 0;
 }
 
 footer{
