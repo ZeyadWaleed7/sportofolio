@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="store.css" />
     <title>Sportofolio.eg</title>
   </head>
-
+  
+  
   <body>
     
     <header class="header">
@@ -35,30 +36,285 @@
     </header>
     
     <main>
-
-      <div class="product-card rounded-4">
-        <div class="product-image">
-          <img src="../../images/logo.png" alt="Evoshield Thigh Guard">
-          <button class="favorite-btn">
-            <span>&#9825;</span>
-          </button>
-        </div>
-        <div class="product-details">
-          <h4 class="brand-name">Sportofolio</h4>
-          <p class="product-title">ELNASSR official kit 2024</p>
-          <p class="price">$34.95</p>
-          <div class="rating">
-            <span class="stars">★★★★☆</span>
-            <span class="review-count">(1222)</span>
+      <div class="main">
+        <div class="product-card rounded-4">
+          <div class="product-image">
+            <img src="../../images/messi_wc_boot.jpg" alt="Evoshield Thigh Guard" />
+            <button class="favorite-btn">
+              <span>&#9825;</span>
+            </button>
           </div>
-          <p class="arrival-info">Arrives: Saturday, Mei 18</p>
+          <div class="product-details">
+            <h4 class="brand-name">Sportofolio</h4>
+            <p class="product-title">LM10 official Boots WC 2022</p>
+            <p class="price">$34.95</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(1222)</span>
+            </div>
+            <p class="arrival-info">Arrives: Saturday, Mei 18</p>
+          </div>
+        </div>
+        <div class="product-card rounded-4">
+          <div class="product-image">
+            <img src="../../images/جمبري.jpg" alt="Evoshield Thigh Guard" />
+            <button class="favorite-btn">
+              <span>&#9825;</span>
+            </button>
+          </div>
+          <div class="product-details">
+            <h4 class="brand-name">Sportofolio</h4>
+            <p class="product-title">جمبري بورسعي جامبو</p>
+            <p class="price">$100</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="review-count">(9999)</span>
+            </div>
+            <p class="arrival-info">Arrives: Saturday, Mei 18</p>
+          </div>
+        </div>
+        <div class="product-card rounded-4">
+          <div class="product-image">
+            <img src="../../images/jabulani.jpg" alt="Evoshield Thigh Guard" />
+            <button class="favorite-btn">
+              <span>&#9825;</span>
+            </button>
+          </div>
+          <div class="product-details">
+            <h4 class="brand-name">Sportofolio</h4>
+            <p class="product-title">jabulani official footbal WC 2010</p>
+            <p class="price">$34.95</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(1222)</span>
+            </div>
+            <p class="arrival-info">Arrives: Saturday, Mei 18</p>
+          </div>
+        </div>
+        <div class="product-card rounded-4">
+          <div class="product-image">
+            <img src="../../images/nassr_kit.png" alt="Evoshield Thigh Guard" />
+            <button class="favorite-btn">
+              <span>&#9825;</span>
+            </button>
+          </div>
+          <div class="product-details">
+            <h4 class="brand-name">Sportofolio</h4>
+            <p class="product-title">ELNASSR official kit 2024</p>
+            <p class="price">$34.95</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(1222)</span>
+            </div>
+            <p class="arrival-info">Arrives: Saturday, Mei 18</p>
+          </div>
+        </div>
+        <div class="product-card rounded-4">
+          <div class="product-image">
+            <img src="../../images/barca_kit.png" alt="Evoshield Thigh Guard" />
+            <button class="favorite-btn">
+              <span>&#9825;</span>
+            </button>
+          </div>
+          <div class="product-details">
+            <h4 class="brand-name">Sportofolio</h4>
+            <p class="product-title">Barcelona official kit 2024</p>
+            <p class="price">$99.99</p>
+            <div class="rating">
+              <span class="stars">★★★☆☆</span>
+              <span class="review-count">(1222)</span>
+            </div>
+            <p class="arrival-info">Arrives: Saturday, Mei 18</p>
+          </div>
+        </div>
+        <div class="product-card rounded-4">
+          <div class="product-image">
+            <img src="../../images/zamalek_kit.png" alt="Evoshield Thigh Guard" />
+            <button class="favorite-btn">
+              <span>&#9825;</span>
+            </button>
+          </div>
+          <div class="product-details">
+            <h4 class="brand-name">Sportofolio</h4>
+            <p class="product-title">Zamalek official kit 2024</p>
+            <p class="price">$1.95</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(1222)</span>
+            </div>
+            <p class="arrival-info">Arrives: Friday, november 27</p>
+          </div>
         </div>
       </div>
 
     </main>
+<!-- Shopping Cart Button -->
+<button class="cart-btn" onclick="openCart()">
+  <i class="fas fa-shopping-cart"></i>
+</button>
 
-    <footer>Copyright © 2024 Sportofolio. All rights reserved</footer>
+<!-- Shopping Cart Modal -->
+<div class="cart-modal" id="cartModal">
+  <div class="cart-modal-content container">
+    <!-- Close Button -->
+    <button class="close-btn" onclick="closeCart()">&times;</button>
 
+    <h2>Your Shopping Cart</h2>
+
+    <div class="cart-items">
+      <!-- Cart Item -->
+      <!-- Cart Item -->
+<div class="cart-item row align-items-center border-bottom py-2">
+  <div class="col-2">
+    <img src="../../images/messi_wc_boot.jpg" alt="Product 1" class="cart-item-image img-fluid">
+  </div>
+  <div class="col-3">
+    <p><strong>LM10 Official Boots WC 2022</strong></p>
+  </div>
+  <div class="col-2">
+    <p><strong>In Stock:</strong> <span id="stock-1">12</span></p>
+  </div>
+  <div class="col-2">
+    <p><strong>Price:</strong> $34.95</p>
+  </div>
+  <div class="col-3 d-flex align-items-center">
+    <button class="btn btn-sm btn-secondary" onclick="updateQuantity(-1, 1)">-</button>
+    <span class="mx-2" id="quantity-1">2</span>
+    <button class="btn btn-sm btn-secondary" onclick="updateQuantity(1, 1)">+</button>
+    <p class="ms-3"><strong>Total:</strong> $<span id="total-1">69.90</span></p>
+  </div>
+</div>
+
+     <!-- Cart Item -->
+<div class="cart-item row align-items-center border-bottom py-2">
+  <div class="col-2">
+    <img src="../../images/jabulani.jpg" alt="Product 2" class="cart-item-image img-fluid">
+  </div>
+  <div class="col-3">
+    <p><strong>jabulani official footbal WC 2010</strong></p>
+  </div>
+  <div class="col-2">
+    <p><strong>In Stock:</strong> <span id="stock-2">12</span></p>
+  </div>
+  <div class="col-2">
+    <p><strong>Price:</strong> $34.95</p>
+  </div>
+  <div class="col-3 d-flex align-items-center">
+    <button class="btn btn-sm btn-secondary" onclick="updateQuantity(-1, 2)">-</button>
+    <span class="mx-2" id="quantity-2">2</span>
+    <button class="btn btn-sm btn-secondary" onclick="updateQuantity(1, 2)">+</button>
+    <p class="ms-3"><strong>Total:</strong> $<span id="total-2">69.90</span></p>
+  </div>
+</div>
+
+    </div>
+
+    <div class="cart-total mt-4 text-end">
+      <p><strong>Total of Totals:</strong> $<span id="grand-total">0.00</span>
+        &nbsp;&nbsp;&nbsp;
+        <strong>Total Items:</strong> <span id="total-items">0</span></p>
+    </div>
+    
+    <div class="cart-summary row mt-4">
+      <div class="col-6 text-start">
+      </div>
+      <div class="col-6 text-end">
+        <button class="btn btn-primary" style="background-color: green; border-color: green;" onclick="goToCheckout()">Go to Checkout</button>
+        <button class="btn btn-secondary" onclick="closeCart()">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+ document.querySelectorAll('.favorite-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('active'); // Toggle the active class for the heart
+    // Toggle the icon between empty heart and filled heart
+    const heart = button.querySelector('span');
+    if (button.classList.contains('active')) {
+      heart.innerHTML = '&#10084;';  // Filled red heart
+    } else {
+      heart.innerHTML = '&#9825;';  // Empty heart
+    }
+  });
+});
+
+  function openCart() {
+      document.getElementById("cartModal").style.display = "flex";
+  }
+
+  function closeCart() {
+      document.getElementById("cartModal").style.display = "none";
+  }
+
+  function goToCheckout() {
+      alert("Proceeding to checkout...");
+      // Add logic to redirect to the checkout page here
+  }
+  function updateQuantity(change, id) {
+  const quantityElement = document.getElementById(`quantity-${id}`);
+  const stockElement = document.getElementById(`stock-${id}`);
+  const totalElement = document.getElementById(`total-${id}`);
+
+  if (!quantityElement || !stockElement || !totalElement) {
+    console.error(`One or more elements for ID ${id} are missing.`);
+    return;
+  }
+
+  let currentQuantity = parseInt(quantityElement.textContent) || 0;
+  let currentStock = parseInt(stockElement.textContent) || 0;
+  const price = 34.95; // Replace with the dynamic price if needed
+
+  if ((change === 1 && currentStock > 0) || (change === -1 && currentQuantity > 0)) {
+    currentQuantity += change;
+    currentStock -= change;
+
+    // Update DOM
+    quantityElement.textContent = currentQuantity;
+    stockElement.textContent = currentStock;
+    totalElement.textContent = (currentQuantity * price).toFixed(2);
+
+    // Update grand total and total items
+    updateGrandTotal();
+  } else {
+    console.warn("No stock left or quantity is already zero.");
+  }
+}
+
+function updateGrandTotal() {
+  let grandTotal = 0;
+  let totalItems = 0;
+
+  // Loop through each cart item and update grand total
+  const cartItems = document.querySelectorAll(".cart-item"); // Use class instead of IDs for cart items
+  cartItems.forEach(item => {
+    const totalElement = item.querySelector("[id^='total-']");
+    const quantityElement = item.querySelector("[id^='quantity-']");
+
+    if (totalElement && quantityElement) {
+      const totalValue = parseFloat(totalElement.textContent);
+      const quantityValue = parseInt(quantityElement.textContent);
+
+      if (!isNaN(totalValue) && !isNaN(quantityValue)) {
+        grandTotal += totalValue;
+        totalItems += quantityValue;
+      } else {
+        console.warn(`Invalid value in item: total = ${totalElement.textContent}, quantity = ${quantityElement.textContent}`);
+      }
+    }
+  });
+
+  // Update the grand total in the modal
+  document.getElementById("grand-total").textContent = grandTotal.toFixed(2);
+  document.getElementById("total-items").textContent = totalItems;
+}
+
+
+
+
+</script>
   </body>  
 </html>  
   
