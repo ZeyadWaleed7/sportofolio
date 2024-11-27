@@ -332,95 +332,74 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* About Section Styling */
-.about-section {
-    text-align: center;
-    padding: 40px 20px;
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
 }
 
-.about-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #2EB62B;
+.modal-content {
+  background-color: rgb(0, 0, 0);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%; 
+  max-width: 1200px;
+  max-height: 80vh; 
+  position: relative;
+  box-shadow: 0 4px 8px rgba(2, 167, 13, 0.2);
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  overflow: hidden;
+  
 }
 
-.team-container {
-    display: flex;
-    
-    justify-content: space-between;
-    gap: 20px;
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-.team-member {
-    width: 24%;
-    background-color: #191919;
-    border-radius: 12px;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: auto; 
-    overflow: hidden;
+.modal-content h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #0f0;
 }
 
-.team-member:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+.modal-content p {
+  font-size: 16px;
+  margin-top: 10px;
+  
 }
 
-.team-photo {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 16px;
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #4ab80e;
+  cursor: pointer;
 }
 
-.team-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 16px 0;
-    color: #2EB62B;
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-.team-description {
-    font-size: 16px;
-    color: #d0d0d0;
-    line-height: 1.8;
-    text-align: justify;
-    padding: 0 10px;
-}
-
-.team-links {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.team-link {
-    color: #2EB62B;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.team-link:hover {
-    color: #1a8b22; 
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* Adjust this to control the image size */
+  margin-bottom: 20px;
 }
 
 /* Responsive Design */

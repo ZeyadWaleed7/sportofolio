@@ -39,16 +39,25 @@
         <h1 class="section-title">Our Blog</h1>
       
         <!-- Featured Blog -->
-        <div class="featured-blog">
-          <div class="featured-content">
-            <h2 class="blog-title">Lionel Messi Wins the WORLDCUP!!!!</h2>
-            <p class="blog-excerpt">
-              The fans should put faith in this group
-            </p>
-            <a href="https://example.com/featured" target="_blank" class="read-more">Read More</a>
-          </div>
-          <img src="../../images/MessiWC.jpg" alt="Featured Blog Post" class="featured-photo" />
-        </div>
+        <!-- Featured Blog -->
+<div class="featured-blog">
+  <div class="featured-content">
+    <h2 class="blog-title">Lionel Messi Wins the WORLDCUP!!!!</h2>
+    <p class="blog-excerpt">
+      The fans should put faith in this group
+    </p>
+    <p class="full-paragraph" style="display:none;">
+      This is the full content of the blog post. It can be multiple paragraphs separated by line breaks.
+      <br><br>
+      Second paragraph of the blog post...
+    </p>
+    <a href="#" class="read-more">Read More</a>
+    <img src="../../images/MessiWC.jpg" alt="Featured Blog Post" class="featured-photo" style="display:none;" />
+
+  </div>
+  <img src="../../images/MessiWC.jpg" alt="Featured Blog Post" class="featured-photo" />
+</div>
+
       
         <!-- Smaller Blog Cards -->
         <div class="blog-container">
@@ -60,9 +69,16 @@
               <p class="blog-excerpt">
                 حياتي الشخصية خط احمر
               </p>
-              <a href="https://example.com/blog1" target="_blank" class="read-more">Read More</a>
+              <p class="full-paragraph" style="display:none;">
+                This is the full content of the blog post. It can be multiple paragraphs separated by line breaks.
+                <br><br>
+                Second paragraph of the blog post...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+                         
             </div>
           </div>
+          
       
           <!-- Blog Card 2 -->
           <div class="blog-card">
@@ -71,6 +87,11 @@
               <h2 class="blog-title">baheg walahi ybnte kan nefso </h2>
               <p class="blog-excerpt">
                 bs de masr
+              </p>
+              <p class="full-paragraph" style="display:none;">
+                This is the full content of the blog post. It can be multiple paragraphs separated by line breaks.
+                <br><br>
+                Second paragraph of the blog post...
               </p>
               <a href="https://example.com/blog2" target="_blank" class="read-more">Read More</a>
             </div>
@@ -84,6 +105,11 @@
               <p class="blog-excerpt">
                    و بيحب بورسعيد اوي يكابنن           
         </p>
+        <p class="full-paragraph" style="display:none;">
+          This is the full content of the blog post. It can be multiple paragraphs separated by line breaks.
+          <br><br>
+          Second paragraph of the blog post...
+        </p>
               <a href="https://example.com/blog3" target="_blank" class="read-more">Read More</a>
             </div>
           </div>
@@ -94,8 +120,88 @@
     </main>
     
 
-    <footer>Copyright © 2024 Sportofolio. All rights reserved</footer>
+    <div id="blog-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-text">
+          <h2 id="modal-title"></h2>
+          <div id="modal-content"></div> <!-- This will display full content from the blog -->
+        </div>
+        <div class="modal-image-container">
+          <img src="" alt="Blog Image" id="modal-image" class="modal-image">
+        </div>
+      </div>
+    </div>
+    
 
+
+    <footer>Copyright © 2024 Sportofolio. All rights reserved</footer>
+    <script>
+      // Get the modal and close button
+      const modal = document.getElementById("blog-modal");
+      const closeBtn = document.querySelector(".close-btn");
+      
+      // Combined function for handling both featured and smaller blog cards
+      function handleBlogCard(button, isFeatured = false) {
+        let blogCard;
+        
+        // Determine if this is a featured blog or a regular blog
+        if (isFeatured) {
+          // For featured blog, select the .featured-content
+          blogCard = button.closest(".featured-content");
+        } else {
+          // For regular blog, select the .blog-card
+          blogCard = button.closest(".blog-card");
+        }
+      
+        // Get the data from the blog card (either featured or smaller blog)
+        const blogTitle = blogCard.querySelector(".blog-title").textContent;
+        const blogExcerpt = blogCard.querySelector(".blog-excerpt").textContent;
+        const blogImageSrc = blogCard.querySelector("img").src;
+      
+        // Get the full paragraph (hidden content in the blog card)
+        const blogParagraph = blogCard.querySelector(".full-paragraph").innerHTML;
+      
+        // Set modal content
+        document.getElementById("modal-title").textContent = blogTitle;
+        document.getElementById("modal-image").src = blogImageSrc;
+      
+        // Clear previous content in the modal
+        const modalContent = document.getElementById("modal-content");
+        modalContent.innerHTML = '';  // Clear any previous modal content
+      
+        // Add each paragraph from the blog to the modal
+        modalContent.innerHTML = blogParagraph; // Directly use innerHTML to display full content
+      
+        // Show the modal
+        modal.style.display = "block";
+      }
+      
+      // Event listener for "Read More" buttons
+      document.querySelectorAll(".read-more").forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();  // Prevent default link action
+      
+          // If the "Read More" button is part of a featured blog, pass true, otherwise false
+          const isFeatured = button.closest(".featured-content") !== null;
+      
+          handleBlogCard(button, isFeatured);
+        });
+      });
+      
+      // Close the modal when clicking the close button
+      closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+      
+      // Close the modal if clicking outside of the modal content
+      window.onclick = function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      };
+      </script>
+      
   </body>  
 </html>  
   
