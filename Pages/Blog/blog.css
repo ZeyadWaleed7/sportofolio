@@ -93,6 +93,13 @@ a {
     font-size: 24px;
 }
 
+.blog {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
+
+
 /* General styling */
 body {
   font-family: 'Arial', sans-serif;
