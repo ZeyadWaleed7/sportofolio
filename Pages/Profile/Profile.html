@@ -11,8 +11,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="Profile.css" />
     <title>Sportofolio Profile</title>
+   
   </head>
 
   <body>
@@ -21,13 +24,10 @@
       <nav class="navigation">
         <div class="links">
           <a href="../Home/home.html" class="home">Home</a>
-          <a href="../Features/features.html" class="features">Features</a>
-          <a href="../About/about.html" class="about_us">About Us</a>
           <a href="../Store/store.html" class="store">Store</a>
           <a href="../Blog/blog.html" class="blog">Blog</a>
         </div>
         <button class="login">Login</button>
-        <button class="SignUp">Sign Up</button>
       </nav>
     </header>
 
@@ -53,40 +53,99 @@
           </div>
         </div>
 
-        <div class="profile-details">
-          <h2 class="details-title">Player Details</h2>
-          <div class="details-grid">
-            <div class="detail-item">
-              <h3>Current Club</h3>
-              <p>Al Ahly (2022–Present)</p>
+        <!-- Navigation Tabs -->
+        <div class="profile-tabs">
+          <button class="tab active" data-tab="gallery">
+            <i class="ri-play-line"></i> 
+          </button>
+          <button class="tab" data-tab="info">
+            <i class="ri-information-line"></i> 
+          </button>
+        </div>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+          <!-- Photos and Videos Section -->
+          <div class="gallery-section active" id="gallery">
+            <div class="gallery-grid">
+              <img
+                src="https://media.giphy.com/media/hryis7A55UXZNCUTNA/giphy.gif?cid=ecf05e47uxzfhnfjrv62jpfej7vjzo2t1zix22zxfiy9la5l&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                alt="ronaldo"
+              />
+              <img
+                src="https://media.giphy.com/media/jIMfuPWTrYgEw/giphy.gif?cid=ecf05e47diwoxjd9n618juxjuh09kkxnj2yfhjkhavrsbuqc&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                alt="cr7"
+              />
+
+              <img
+                src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjdkaTQ2dWF4cHI0MTRqYndsc2JoeGI2MWp2NHdrYWp5c2V1cXZlZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SKAQ4kWov6tdC/giphy.gif"
+                alt="ronaldo"
+              />
+
+              <img
+              src="https://media.giphy.com/media/ludb5M5f7udlDMGqVA/giphy.gif?cid=ecf05e47zqucb7ri4lcrnkofpvymhuhn4jy8g78yitji4rlc&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+              alt="cr7"
+            />
+              <img
+                src="https://media.giphy.com/media/4jtODh4Qekmic/giphy.gif?cid=ecf05e47zqucb7ri4lcrnkofpvymhuhn4jy8g78yitji4rlc&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                alt="cr7"
+              />
+              <img
+                src="https://media.giphy.com/media/qlMvnlzaeSUwM/giphy.gif?cid=790b7611udtoib8u86wv0dh6hmibyh6ldhfaictyr79tcmwq&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                alt="cr7"
+              />
+              
+
+
+              
             </div>
-            <div class="detail-item">
-              <h3>Heart Rate</h3>
-              <p>70 BPM</p>
-            </div>
-            <div class="detail-item">
-              <h3>Age</h3>
-              <p>18 years</p>
-            </div>
-            <div class="detail-item">
-              <h3>Used Foot</h3>
-              <p>Right, Left</p>
-            </div>
-            <div class="detail-item">
-              <h3>Length</h3>
-              <p>190 cm</p>
-            </div>
-            <div class="detail-item">
-              <h3>Calories</h3>
-              <p>620.9 kcal</p>
-            </div>
-            <div class="detail-item">
-              <h3>Weight</h3>
-              <p>91 kg</p>
-            </div>
-            <div class="detail-item">
-              <h3>Previous Clubs</h3>
-              <p>Zamalek (2018–2022)</p>
+          </div>
+
+          <!-- Player Info Section -->
+          <div class="content-section" id="info">
+            <div class="details-grid">
+              <div class="detail-item">
+                <h3>Current Club</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/ar/thumb/2/21/Al_Ahly_SC_logo_23.svg/1538px-Al_Ahly_SC_logo_23.svg.png"/>
+                <p>Al Ahly (2022–Present)</p>
+
+              </div>
+              <div class="detail-item">
+                <i class="ri-heart-line"></i>
+                <h3>Heart Rate</h3>
+                
+                <p>70 BPM</p>
+              </div>
+              <div class="detail-item">
+                <i class="ri-calendar-schedule-line"></i>
+                <h3>Age</h3>
+                <p>18 years</p>
+              </div>
+              <div class="detail-item">
+                <i class="ri-footprint-line"></i>
+                <h3>Used Foot</h3>
+                <p>Right, Left</p>
+              </div>
+              <div class="detail-item">
+                <i class="ri-ruler-line"></i>
+                <h3>Length</h3>
+                <p>190 cm</p>
+              </div>
+              <div class="detail-item">
+                <i class="ri-fire-line"></i>
+                <h3>Calories</h3>
+                <p>620.9 kcal</p>
+              </div>
+              <div class="detail-item">
+                <i class="ri-scales-2-line"></i>
+                <h3>Weight</h3>
+                <p>91 kg</p>
+              </div>
+              <div class="detail-item">
+                <h3>Previous Clubs</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/ar/thumb/e/ec/Zamalek_Logo.svg/162px-Zamalek_Logo.svg.png"/>
+                <p>Zamalek (2018–2022)</p>
+              </div>
             </div>
           </div>
         </div>
@@ -94,5 +153,25 @@
     </main>
 
     <footer>Copyright © 2024 Sportofolio. All rights reserved</footer>
+
+    <script>
+      // switching between info and gallery
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".profile-tabs .tab");
+        const sections = document.querySelectorAll(".profile-content > div");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            tabs.forEach((t) => t.classList.remove("active"));
+            sections.forEach((s) => s.classList.remove("active"));
+
+            // Add active class
+            tab.classList.add("active");
+            const targetId = tab.getAttribute("data-tab");
+            document.getElementById(targetId).classList.add("active");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
