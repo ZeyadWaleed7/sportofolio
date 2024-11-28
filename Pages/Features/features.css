@@ -104,44 +104,36 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+
 .card-container {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-  }
-  .subscription-card {
+}
+.subscription-card {
     border-radius: 15px;
     padding: 1.5rem;
     color: white;
     width: 300px;
     position: relative;
-  }
-  .subscription-card h2 {
+}
+.subscription-card h2 {
     font-weight: bold;
-  }
-  .subscription-card .badge {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    background: red;
-    color: white;
-    border-radius: 50%;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-  }
-  .subscription-card button {
+}
+
+.subscription-card button {
     border-radius: 50px;
-  }
-  .card-athletes {
-    background: linear-gradient(to bottom, #0f9d58, #34a853);
-  }
-  .card-coaches {
-    background: linear-gradient(to bottom, #6a1b9a, #8e24aa);
-  }
-  .card-clubs {
-    background: linear-gradient(to bottom, #006064, #00838f);
-  }
+}
+.card-athletes {
+    background-color: #0f9d58;
+}
+.card-coaches {
+    background-color: #0f9d58;
+}
+.card-clubs {
+    background-color: #0f9d58;
+}
 
 footer{
     color: white;
