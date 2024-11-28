@@ -139,7 +139,7 @@ body{
     width: 500px;
     height: auto;
     padding-top: 40px;
-    padding-right: 0;
+    margin-right: 0;
 }
 
 footer{
@@ -171,19 +171,22 @@ footer{
 .partner{
     background-color: #191919;
 }
+
 .partnerstext{
     color:#4f4f4f;
-    padding-top: 200px;
+    padding-top: 130px;
     margin-bottom: 20px;
 }
+.partnerscontainer{
+    margin-top: 0px;
+}
 
-.maincard{
-    background-color:#4f4f4f;
-    height:500px;
-    margin-left: 38px;
-    margin-right: 38px;
-    width: 1440px;
-    margin-top: 24px;
+.card-image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -214,4 +217,71 @@ footer{
     .textcontainer{
         padding-top: 24px;
     }
+}
+
+#scrolling-words {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: #007BFF; 
+    transform: translateY(100%);
+    animation: swipe-up 2s ease-in-out infinite;
+}
+
+@keyframes swipe-up {
+    0% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50.1% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+}
+.sports {
+    overflow: hidden;
+    white-space: nowrap;
+    height: 1em; 
+    line-height: 1; 
+    position: relative;
+}
+.SendMessagebtn{
+    background-color:#2EB62B;
+    color:white;
+}
+.privacytext{
+    color:#2EB62B; 
+}
+.cuheader{
+    text-align: left;
+    font-size: 40px;
+}
+.formbox{
+    color: #b0b3b8;
+    background-color: #333334;
+}
+.formtext{
+    color: #b0b3b8;
+}
+
+.maincard {
+    background-color: #373737;
+    height: 500px;
+    width: auto;
+    margin-top: 24px;
+    margin-right: 99.6px;
+    margin-left: 99.6px;
+    overflow: hidden;
+    border-radius: 50px;
+    color:white;
 }

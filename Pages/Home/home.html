@@ -40,16 +40,19 @@
 
     </header>
     
-    <main>
-      
-       <!-- Card 1 -->
+    <main>  
        <div class="card maincard text-white rounded-5">
+        <p class = "sports">
+          Connecting <span id="scrolling-words" class="swipe-effect"></span> to opportunities
+        </p>
+        <img src="/images/maincard.png" alt="Sportofolio Image" class="card-image">
       </div>
 
-      <div class ="partnerstext d-flex justify-content-center partnerstext">
+      <div class ="partnerstext d-flex justify-content-center">
         <h4>──────────────────  Our partners  ──────────────────</h4>
       </div>
-      <section class="partners d-flex justify-content-center gap-4 partnerscontainer">  
+
+      <div class="d-flex justify-content-center gap-4 partnerscontainer">  
         <!-- Card 1 -->
         <div class="card partner text-white rounded-3" style="width: 150px;">
           <img src="/images/partner1.png" class="card-img-top" alt="Partner 1">
@@ -64,31 +67,86 @@
         <div class="card partner text-white rounded-3" style="width: 150px;">
           <img src="/images/partner3.png" class="card-img-top" alt="Partner 3">
         </div>
-      </section>
+      </div>
       
 
-      <section class="container d-flex w-100 justify-content-between">
+      <section class="container d-flex w-100 justify-content-between flex-column">
+        <div class ="d-flex flex-row">
+          <div class="textcontainer">
 
-        <div class="textcontainer">
+            <h1>Welcome to Sportofolio</h1>
+            <p>Join us in changing the sports industry</p>
 
-          <h1>Welcome to Sportofolio</h1>
-          <p>Join us in changing the sports industry</p>
+            <div class="download">
+              <img src="/images/download.png" alt="Download Image">
+            </div>
 
-          <div class="download">
-            <img src="/images/download.png" alt="Download Image">
           </div>
 
+          <div class="bgimage">
+            <img src="/images/bg.png" alt="Background Image">
+          </div>
         </div>
 
-        <div class="bgimage">
-          <img src="/images/bg.png" alt="Background Image">
+        <div class="container mt-5 text mb-5">
+          <h2 class="text-center mb-4 text-white cuheader fw-semibold">Contact Us</h2>
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control formbox border-0" id="firstName" placeholder="First name">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control formbox border-0" id="lastName" placeholder="Last name">
+              </div>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control formbox border-0" id="email" placeholder="Email address">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control formbox border-0" id="message" rows="3" placeholder="Leave us a message..."></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="privacyPolicy">
+              <label class="form-check-label formtext" for="privacyPolicy">
+                You agree to our <a class = "privacytext" href="#" target="_blank">privacy policy</a>.
+              </label>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn SendMessagebtn">Send message</button>
+            </div>
+          </form>
         </div>
-
       </section>
+
     </main>
 
     <footer>Copyright © 2024 Sportofolio. All rights reserved</footer>
 
   </body>  
+  <script>
+   const words = ['basketballers', 'footballers', 'cricketers', 'tennis players', 'swimmers'];
+let index = 0;
+
+function scrollWords() {
+  const scrollingElement = document.getElementById('scrolling-words');
+
+  // Update the word after it swipes up and disappears (at 50% of animation duration)
+  setTimeout(() => {
+    scrollingElement.textContent = words[index];
+    index = (index + 1) % words.length; // Loop back to the first word
+  }, 1000); // Half of the 2-second animation duration
+}
+
+// Change word every 2 seconds
+setInterval(scrollWords, 2000);
+
+// Initialize the first word
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('scrolling-words').textContent = words[0];
+  scrollWords();
+});
+
+
+  </script>  
 </html>  
   
