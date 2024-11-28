@@ -44,6 +44,11 @@
       
        <!-- Card 1 -->
        <div class="card maincard text-white rounded-5">
+        <h1>Welcome to Sportofolio</h1>
+        <p style="position: relative; display: inline-block; overflow: hidden; height: 1em;">
+          Connecting <span id="scrolling-words" class="swipe-effect"></span> to opportunities
+        </p>
+        <img src="/images/maincard.png" alt="Sportofolio Image" class="card-image">
       </div>
 
       <div class ="partnerstext d-flex justify-content-center partnerstext">
@@ -90,5 +95,75 @@
     <footer>Copyright © 2024 Sportofolio. All rights reserved</footer>
 
   </body>  
+  <script>
+   const words = ['basketballers', 'footballers', 'cricketers', 'tennis players', 'swimmers'];
+let index = 0;
+
+function scrollWords() {
+  const scrollingElement = document.getElementById('scrolling-words');
+
+  // Update the word after it swipes up and disappears (at 50% of animation duration)
+  setTimeout(() => {
+    scrollingElement.textContent = words[index];
+    index = (index + 1) % words.length; // Loop back to the first word
+  }, 1000); // Half of the 2-second animation duration
+}
+
+// Change word every 2 seconds
+setInterval(scrollWords, 2000);
+
+// Initialize the first word
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('scrolling-words').textContent = words[0];
+  scrollWords();
+});
+
+
+  </script>
+  
+  <style>
+    /* Wrapping container to clip the animation within its bounds */
+    p {
+      overflow: hidden;
+      white-space: nowrap;
+      height: 1em; /* Ensures height matches font-size */
+      line-height: 1; /* Consistent alignment */
+      position: relative; /* Ensures absolute positioning works */
+    }
+  
+    #scrolling-words {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+      color: #007BFF; /* Adjust to match your theme */
+      transform: translateY(100%); /* Start from below */
+      animation: swipe-up 2s ease-in-out infinite;
+    }
+  
+    @keyframes swipe-up {
+      0% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      50.1% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+  </style>
+  
+  
+  
+  
 </html>  
   
