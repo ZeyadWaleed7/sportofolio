@@ -28,8 +28,8 @@
 
         </div>
 
-        <button class="login">Login</button>
-        <button class="SignUp">Sign Up</button>
+        <button class="login" onclick="window.location.href='../login/login.html';">Login</button>
+        <button class="SignUp" onclick="window.location.href='../signup/signup.html';">Sign Up</button>
 
       </nav>
 
@@ -142,6 +142,42 @@
               <span class="review-count">(1222)</span>
             </div>
             <p class="arrival-info">Arrives: Saturday, Mei 18</p>
+          </div>
+        </div>
+        <div class="product-card rounded-4">
+          <div class="product-image">
+            <img src="../../images/zamalek_kit.png" alt="Evoshield Thigh Guard" />
+            <button class="favorite-btn">
+              <span>&#9825;</span>
+            </button>
+          </div>
+          <div class="product-details">
+            <h4 class="brand-name">Sportofolio</h4>
+            <p class="product-title">Zamalek official kit 2024</p>
+            <p class="price">$1.95</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(1222)</span>
+            </div>
+            <p class="arrival-info">Arrives: Friday, november 27</p>
+          </div>
+        </div>
+        <div class="product-card rounded-4">
+          <div class="product-image">
+            <img src="../../images/zamalek_kit.png" alt="Evoshield Thigh Guard" />
+            <button class="favorite-btn">
+              <span>&#9825;</span>
+            </button>
+          </div>
+          <div class="product-details">
+            <h4 class="brand-name">Sportofolio</h4>
+            <p class="product-title">Zamalek official kit 2024</p>
+            <p class="price">$1.95</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="review-count">(1222)</span>
+            </div>
+            <p class="arrival-info">Arrives: Friday, november 27</p>
           </div>
         </div>
         <div class="product-card rounded-4">
@@ -326,6 +362,28 @@ function updateGrandTotal() {
   // Update the grand total in the modal
   document.getElementById("grand-total").textContent = grandTotal.toFixed(2);
   document.getElementById("total-items").textContent = totalItems;
+}
+
+
+// search filter
+function filterProducts() {
+  const searchValue = document.querySelector(".search-input").value.toLowerCase();
+
+  const productCards = document.querySelectorAll(".product-card");
+
+  productCards.forEach(card => {
+    const titleElement = card.querySelector(".product-title");
+
+    if (titleElement) {
+      const title = titleElement.textContent.toLowerCase();
+
+      if (title.includes(searchValue)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    }
+  });
 }
 
 
