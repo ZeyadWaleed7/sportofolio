@@ -40,21 +40,19 @@
 
     </header>
     
-    <main>
-      
-       <!-- Card 1 -->
+    <main>  
        <div class="card maincard text-white rounded-5">
-        <h1>Welcome to Sportofolio</h1>
-        <p style="position: relative; display: inline-block; overflow: hidden; height: 1em;">
+        <p class = "sports">
           Connecting <span id="scrolling-words" class="swipe-effect"></span> to opportunities
         </p>
         <img src="/images/maincard.png" alt="Sportofolio Image" class="card-image">
       </div>
 
-      <div class ="partnerstext d-flex justify-content-center partnerstext">
+      <div class ="partnerstext d-flex justify-content-center">
         <h4>──────────────────  Our partners  ──────────────────</h4>
       </div>
-      <section class="partners d-flex justify-content-center gap-4 partnerscontainer">  
+
+      <div class="d-flex justify-content-center gap-4 partnerscontainer">  
         <!-- Card 1 -->
         <div class="card partner text-white rounded-3" style="width: 150px;">
           <img src="/images/partner1.png" class="card-img-top" alt="Partner 1">
@@ -69,27 +67,57 @@
         <div class="card partner text-white rounded-3" style="width: 150px;">
           <img src="/images/partner3.png" class="card-img-top" alt="Partner 3">
         </div>
-      </section>
+      </div>
       
 
-      <section class="container d-flex w-100 justify-content-between">
+      <section class="container d-flex w-100 justify-content-between flex-column">
+        <div class ="d-flex flex-row">
+          <div class="textcontainer">
 
-        <div class="textcontainer">
+            <h1>Welcome to Sportofolio</h1>
+            <p>Join us in changing the sports industry</p>
 
-          <h1>Welcome to Sportofolio</h1>
-          <p>Join us in changing the sports industry</p>
+            <div class="download">
+              <img src="/images/download.png" alt="Download Image">
+            </div>
 
-          <div class="download">
-            <img src="/images/download.png" alt="Download Image">
           </div>
 
+          <div class="bgimage">
+            <img src="/images/bg.png" alt="Background Image">
+          </div>
         </div>
 
-        <div class="bgimage">
-          <img src="/images/bg.png" alt="Background Image">
+        <div class="container mt-5 text mb-5">
+          <h2 class="text-center mb-4 text-white cuheader fw-semibold">Contact Us</h2>
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control formbox border-0" id="firstName" placeholder="First name">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control formbox border-0" id="lastName" placeholder="Last name">
+              </div>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control formbox border-0" id="email" placeholder="Email address">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control formbox border-0" id="message" rows="3" placeholder="Leave us a message..."></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="privacyPolicy">
+              <label class="form-check-label formtext" for="privacyPolicy">
+                You agree to our <a class = "privacytext" href="#" target="_blank">privacy policy</a>.
+              </label>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn SendMessagebtn">Send message</button>
+            </div>
+          </form>
         </div>
-
       </section>
+
     </main>
 
     <footer>Copyright © 2024 Sportofolio. All rights reserved</footer>
@@ -119,51 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-  </script>
-  
-  <style>
-    /* Wrapping container to clip the animation within its bounds */
-    p {
-      overflow: hidden;
-      white-space: nowrap;
-      height: 1em; /* Ensures height matches font-size */
-      line-height: 1; /* Consistent alignment */
-      position: relative; /* Ensures absolute positioning works */
-    }
-  
-    #scrolling-words {
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      font-weight: bold;
-      color: #007BFF; /* Adjust to match your theme */
-      transform: translateY(100%); /* Start from below */
-      animation: swipe-up 2s ease-in-out infinite;
-    }
-  
-    @keyframes swipe-up {
-      0% {
-        transform: translateY(0%);
-        opacity: 1;
-      }
-      50% {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      50.1% {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0%);
-        opacity: 1;
-      }
-    }
-  </style>
-  
-  
-  
-  
+  </script>  
 </html>  
   
