@@ -1,25 +1,20 @@
+// search filter
 function filterProducts() {
-
-    const searchValue = document.getElementById("search-form").value.toLowerCase();
-    
+    const searchValue = document.querySelector(".search-input").value.toLowerCase();
+  
     const productCards = document.querySelectorAll(".product-card");
-    
-    productCards.forEach((card) => {
-    
-    const titleElement = card.querySelector(".product-title"); // Find the title inside each card
-    
-    const title = titleElement.textContent.toLowerCase(); // to avoid stupidity
-    
-    if (title.includes(searchValue)) {
-    
-    card.style.display = "block"; // Show matching cards
-    
-    } else {
-    
-    card.style.display = "none"; // Hide non-matching cards
-    
-    }
-    
+  
+    productCards.forEach(card => {
+      const titleElement = card.querySelector(".product-title");
+  
+      if (titleElement) {
+        const title = titleElement.textContent.toLowerCase();
+  
+        if (title.includes(searchValue)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      }
     });
-    
-    } 
+  }
