@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "D:/Work/Learning/coourses/Y3 S1/ui/UI Project/sportofolio/Pages/Blog/blog.html",
+            "url": "http://127.0.0.1:3000/Pages/Home/home.html",
             "webRoot": "${workspaceFolder}" 
         }
     ]
