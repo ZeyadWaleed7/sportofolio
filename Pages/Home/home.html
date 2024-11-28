@@ -116,6 +116,19 @@
             </div>
           </form>
         </div>
+
+        <div class="container my-5 mb-5">
+          <h1 class="fw-semibold text-center text-white mb-4 FAQstext">Frequently Asked Questions</h1>
+          <div class="faq-container">
+            <div>
+              <h2 class="faq-header">What do we do?</h2>
+              <div class="faq-body">
+                We provide a secure, cloud-based customer management platform with powerful analytics and integrations. Our intuitive interface makes it easy to customize and automate customer workflows and manage customers.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
 
     </main>
@@ -124,29 +137,11 @@
 
   </body>  
   <script>
-   const words = ['basketballers', 'footballers', 'cricketers', 'tennis players', 'swimmers'];
-let index = 0;
-
-function scrollWords() {
-  const scrollingElement = document.getElementById('scrolling-words');
-
-  // Update the word after it swipes up and disappears (at 50% of animation duration)
-  setTimeout(() => {
-    scrollingElement.textContent = words[index];
-    index = (index + 1) % words.length; // Loop back to the first word
-  }, 1000); // Half of the 2-second animation duration
-}
-
-// Change word every 2 seconds
-setInterval(scrollWords, 2000);
-
-// Initialize the first word
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('scrolling-words').textContent = words[0];
-  scrollWords();
-});
-
-
-  </script>  
+    document.querySelectorAll('.faq-header').forEach(header => {
+      header.addEventListener('click', () => {
+        header.classList.toggle('active');
+      });
+    });
+  </script> 
 </html>  
   
