@@ -323,6 +323,7 @@ footer {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding-right: 50px;
   }
   
   .bar {
