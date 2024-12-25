@@ -376,3 +376,53 @@ footer {
     }
   }
   
+
+  /* Burger Menu CSS */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 50px;
+  }
+  
+  .bar {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin: 3px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: flex;
+    }
+  
+    .navigation {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      border-radius: 8px;
+      padding: 10px;
+      z-index: 1001;
+    }
+  
+    .navigation.active {
+      display: flex;
+    }
+  
+    .links a {
+      font-size: 16px;
+      padding: 8px 0;
+      text-align: center;
+      color: white;
+    }
+  
+    .links a:hover {
+      color: #2EB62B;
+    }
+  }
+  
