@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login, .SignUp {
+  border-radius: 10px;
+  font-weight: 550;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.login {
+  background: #F5F5F5;
+  color: black;
+  border: none;
+}
+
+.login:hover {
+  background-color: rgba(212, 211, 211, 0.816);
+}
+
+.SignUp {
+  background-color: #2EB62B;
+  border: 2px solid #2EB62B;
+  color: white;
+}
+
+.SignUp:hover {
+  background-color: #186f17;
+  border-color: #186f17;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(40px);
+}
+
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  gap: 12px;
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+  margin-right: 32px;
+}
+
+.links a {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.links a.home {
+  color: #2EB62B;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color: #2EB62B;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: white;
+  height: 3px;
+  width: 30px;
+  margin: 3px 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  width: 100%;
+}
+
+.textcontainer {
+  padding: 200px 36px 0;
+}
+
+.textcontainer h1 {
+  font-size: 65px;
+}
+
+.textcontainer p {
+  font-size: 30px;
+}
+
+.download img {
+  max-width: 300px;
+  height: auto;
+}
+
+.bgimage img {
+  width: 500px;
+  height: auto;
+}
+
+.partner {
+  background-color: #191919;
+}
+
+.partnerstext {
+  color: #4f4f4f;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.partnerscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.partner {
+  background-color: #191919;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.partner img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.maincard {
+  background-color: #373737;
+  height: auto;
+  margin: 24px auto;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.sports {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+}
+
+.formbox {
+  color: #b0b3b8;
+  background-color: #333334;
+  border: 0;
+}
+
+.formtext, .privacytext {
+  color: #b0b3b8;
+}
+
+.privacytext {
+  color: #2EB62B;
+}
+
+.SendMessagebtn {
+  background-color: #2EB62B;
+  color: white;
+}
+
+.FAQstext {
+  font-size: 35px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .textcontainer {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .textcontainer h1 {
+    font-size: 40px;
+  }
+
+  .textcontainer p {
+    font-size: 18px;
+  }
+
+  .bgimage img {
+    width: 100%;
+  }
+
+  .partnerscontainer {
+    gap: 0.5rem;
+  }
+
+  .partner {
+    width: 120px;
+  }
+
+  .maincard {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .sports {
+    font-size: 1.2rem;
+  }
+
+  .card-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sports {
+    font-size: 1rem;
+  }
+
+  .partnerscontainer {
+    gap: 0.25rem;
+  }
+
+  .partner {
+    width: 100px;
+  }
+
+  .maincard {
+    margin: 16px;
+    border-radius: 20px;
+  }
+
+  .faq-header {
+    font-size: 1rem;
+  }
+
+  .faq-body {
+    font-size: 0.9rem;
+  }
+}
+
+.partnerstext {
+    color: #4f4f4f;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  
+  .partnerstext h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  
+  @media (max-width: 768px) {
+    .partnerstext h4 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partnerstext h4 {
+      font-size: 1rem;
+    }
+  }
+  
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin: 3px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      border-radius: 8px;
+      padding: 10px;
+      z-index: 1001;
+    }
+  
+    .navigation.active {
+      display: flex;
+    }
+  
+    .burger-menu {
+      display: flex;
+    }
+  }
+  
+  .card-image.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .card-image.responsive-image {
+      max-width: 90%;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-image.responsive-image {
+      max-width: 100%;
+    }
+  }
+  
