@@ -5,313 +5,317 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.login{
-    background: #F5F5F5;
-    border: none;
-    color:black;
-    font-weight:550;
-    font-size: 14px;
-    padding: 8px 16px;
-    border-radius: 10px; 
+.login, .SignUp {
+  border-radius: 10px;
+  font-weight: 550;
+  font-size: 14px;
+  padding: 8px 16px;
 }
 
-.login:hover{
-    background-color: rgba(212, 211, 211, 0.816);
+.login {
+  background: #F5F5F5;
+  color: black;
+  border: none;
 }
 
-.SignUp{
-    background-color: #2EB62B;
-    border: 2px solid #2EB62B;
-    color: white;
-    font-weight:550;
-    font-size: 16px;
-    padding: 6px 12px;
-    border-radius: 10px;  
+.login:hover {
+  background-color: rgba(212, 211, 211, 0.816);
 }
 
-.SignUp:hover{
-    background-color: #186f17;
-    border-color: #186f17;
-    color: rgba(212, 211, 211, 0.816);
+.SignUp {
+  background-color: #2EB62B;
+  border: 2px solid #2EB62B;
+  color: white;
+}
+
+.SignUp:hover {
+  background-color: #186f17;
+  border-color: #186f17;
 }
 
 .header {
-    display: flex;
-    padding-top: 24px;
-    color: white;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(40px);
-    padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(40px);
 }
 
-.navigation{
-    display: flex;
-    gap: 12px;
-    padding-right: 24px;
-    padding-top: 5px;
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  gap: 12px;
 }
 
 .links {
-    gap: 32px;
-    display:flex;
-    margin-right: 32px;
+  display: flex;
+  gap: 32px;
+  margin-right: 32px;
 }
 
-.links a{
-    color: white;
-    font-weight:500;
-    font-size: 18px;
-    padding-top: 7px;
+.links a {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.links a.home{
-    color: #2EB62B;
-    font-weight: bold;
+.links a.home {
+  color: #2EB62B;
+  font-weight: bold;
 }
 
-.links a:hover{
-    color:#2EB62B;
+.links a:hover {
+  color: #2EB62B;
 }
 
-
-.logo {
-    padding-left: 24px;
-    color: white;
-    font-weight: 700;
-    font-size: 24px;
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-body{
-    width:100%;
-    background-color: black;
-    background-attachment:scroll; 
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.bar {
+  background-color: white;
+  height: 3px;
+  width: 30px;
+  margin: 3px 0;
 }
 
-.main{
-    width: 100%;
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.textcontainer{
-    padding-top: 200px;
-    padding-left:36px;
-
+.main {
+  width: 100%;
 }
 
-.textcontainer h1{
-    color: white;
-    font-size: 65px;
+.textcontainer {
+  padding: 200px 36px 0;
 }
+
+.textcontainer h1 {
+  font-size: 65px;
+}
+
 .textcontainer p {
-    color: white;
-    font-size: 30px;
-}
-
-.download {
-    padding-top:20px;
-    max-width:300px;
-    height: auto;
+  font-size: 30px;
 }
 
 .download img {
-    width: 100%;
-    height: auto;
-    
+  max-width: 300px;
+  height: auto;
 }
 
 .bgimage img {
-    width: 500px;
-    height: auto;
-    padding-top: 40px;
-    margin-right: 0;
+  width: 500px;
+  height: auto;
 }
 
-footer{
-    color: white;
-    margin-top: auto;
-    text-align: center;
-    padding-bottom: 24px;
-    font-size: 12px;
+.partner {
+  background-color: #191919;
 }
 
-.home {
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 3px;
-}
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-  
-.bar {
-    background-color: white;
-    height: 3px;
-    width: 30px;
-    margin: 3px 0;
+.partnerstext {
+  color: #4f4f4f;
+  text-align: center;
+  margin: 2rem 0;
 }
 
-.partner{
-    background-color: #191919;
+.partnerscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.partnerstext{
-    color:#4f4f4f;
-    padding-top: 130px;
-    margin-bottom: 20px;
-}
-.partnerscontainer{
-    margin-top: 0px;
-}
-
-.card-image {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.partner {
+  background-color: #191919;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-    .navigation{
-        display: none;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .textcontainer{
-        padding-top: 200px;
-        padding-left:24px;
-        align-items: center;
-    }
-    .header {
-        padding-left: 24px;
-    }
-    .logo{
-        padding-left:0px;
-    }
-    .textcontainer h1{
-        font-size: 40px;
-        padding-right: 16px;
-    }
-    .textcontainer p {
-        font-size: 14px;
-    }
-    .textcontainer{
-        padding-top: 24px;
-    }
-}
-
-#scrolling-words {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-weight: bold;
-    color: #007BFF; 
-    transform: translateY(100%);
-    animation: swipe-up 2s ease-in-out infinite;
-}
-
-@keyframes swipe-up {
-    0% {
-      transform: translateY(0%);
-      opacity: 1;
-    }
-    50% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    50.1% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0%);
-      opacity: 1;
-    }
-}
-.sports {
-    overflow: hidden;
-    white-space: nowrap;
-    height: 1em; 
-    line-height: 1; 
-    position: relative;
-}
-.SendMessagebtn{
-    background-color:#2EB62B;
-    color:white;
-}
-.privacytext{
-    color:#2EB62B; 
-}
-.cuheader{
-    font-size: 40px;
-}
-
-.FAQstext{
-    font-size: 35px; 
-}
-.formbox{
-    color: #b0b3b8;
-    background-color: #333334;
-}
-.formtext{
-    color: #b0b3b8;
+.partner img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .maincard {
-    background-color: #373737;
-    height: 500px;
-    width: auto;
-    margin-top: 24px;
-    margin-right: 99.6px;
-    margin-left: 99.6px;
-    overflow: hidden;
-    border-radius: 50px;
-    color:white;
+  background-color: #373737;
+  height: auto;
+  margin: 24px auto;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+  overflow: hidden;
+  color: white;
 }
-.faq-container {
-    background: #373737;
-    border-radius: 8px;
-    padding: 1rem;
-  }
-  .faq-header {
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 1.25rem;
-    margin: 0;
-    padding: 0.75rem;
-    background: #373737;
-    border-radius: 8px;
-    color: #b0b3b8;
-    font-size: 30px;
-  }
-  .faq-body {
-    margin-top: 0.5rem;
+
+.sports {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+}
+
+.formbox {
+  color: #b0b3b8;
+  background-color: #333334;
+  border: 0;
+}
+
+.formtext, .privacytext {
+  color: #b0b3b8;
+}
+
+.privacytext {
+  color: #2EB62B;
+}
+
+.SendMessagebtn {
+  background-color: #2EB62B;
+  color: white;
+}
+
+.FAQstext {
+  font-size: 35px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .navigation {
     display: none;
-    padding: 0.75rem;
-    background:  #373737;
-    border-radius: 8px;
-    color: #b0b3b8;
   }
-  .faq-header.active + .faq-body {
-    display: block;
+
+  .burger-menu {
+    display: flex;
   }
+
+  .textcontainer {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .textcontainer h1 {
+    font-size: 40px;
+  }
+
+  .textcontainer p {
+    font-size: 18px;
+  }
+
+  .bgimage img {
+    width: 100%;
+  }
+
+  .partnerscontainer {
+    gap: 0.5rem;
+  }
+
+  .partner {
+    width: 120px;
+  }
+
+  .maincard {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .sports {
+    font-size: 1.2rem;
+  }
+
+  .card-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sports {
+    font-size: 1rem;
+  }
+
+  .partnerscontainer {
+    gap: 0.25rem;
+  }
+
+  .partner {
+    width: 100px;
+  }
+
+  .maincard {
+    margin: 16px;
+    border-radius: 20px;
+  }
+
+  .faq-header {
+    font-size: 1rem;
+  }
+
+  .faq-body {
+    font-size: 0.9rem;
+  }
+}
+
+.partnerstext {
+    color: #4f4f4f;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  
+  .partnerstext h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  
+  @media (max-width: 768px) {
+    .partnerstext h4 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partnerstext h4 {
+      font-size: 1rem;
+    }
+  }
+  
